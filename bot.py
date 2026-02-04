@@ -1,3 +1,14 @@
+
+import os
+
+TOKEN = os.getenv("TOKEN")
+
+print("DEBUG_TOKEN_VALUE:", repr(TOKEN))
+
+from telegram import Update
+from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
+
+
 import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
